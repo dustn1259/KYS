@@ -43,5 +43,35 @@ class SignUp : AppCompatActivity() {
             //show까지해야 사용자에게 보여질 수 있다. 안녕하세요가 찍힌다. binding class쓰기
         }
     }
+    override fun onStart() {
+        super.onStart()
+        val functionName = object{}.javaClass.enclosingMethod.name
+      Log.d("functionName",functionName)
+
+    }
+    override fun onResume() {
+        super.onResume()
+        val functionName = object{}.javaClass.enclosingMethod.name
+        Log.d("functionName",functionName)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        val functionName = object{}.javaClass.enclosingMethod.name
+        Log.d("functionName",functionName)
+    }
+
+    override fun onStop() {
+        super.onStop()
+        val functionName = object{}.javaClass.enclosingMethod.name
+        Log.d("functionName",functionName)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        val functionName = object{}.javaClass.enclosingMethod.name
+        Log.d("functionName",functionName)
+    }
+
 }
 

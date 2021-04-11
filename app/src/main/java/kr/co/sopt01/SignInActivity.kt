@@ -12,6 +12,8 @@ import kr.co.sopt01.databinding.ActivitySignUpBinding
 
 class SignInActivity : AppCompatActivity() {
     lateinit var binding: ActivitySignInBinding
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -58,6 +60,35 @@ class SignInActivity : AppCompatActivity() {
             val intent = Intent(this@SignInActivity,SignUp::class.java)
             startActivity(intent)
         }
+    }
+    override fun onStart() {
+        super.onStart()
+        val functionName = object{}.javaClass.enclosingMethod.name
+        Log.d("functionName",functionName)
+
+    }
+    override fun onResume() {
+        super.onResume()
+        val functionName = object{}.javaClass.enclosingMethod.name
+        Log.d("functionName",functionName)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        val functionName = object{}.javaClass.enclosingMethod.name
+        Log.d("functionName",functionName)
+    }
+
+    override fun onStop() {
+        super.onStop()
+        val functionName = object{}.javaClass.enclosingMethod.name
+        Log.d("functionName",functionName)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        val functionName = object{}.javaClass.enclosingMethod.name
+        Log.d("functionName",functionName)
     }
 
 

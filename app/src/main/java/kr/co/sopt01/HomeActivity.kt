@@ -2,12 +2,14 @@ package kr.co.sopt01
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import kr.co.sopt01.databinding.ActivityHomeBinding
 import kr.co.sopt01.databinding.ActivitySignInBinding
 
 class HomeActivity : AppCompatActivity() {
     lateinit var binding: ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -22,4 +24,34 @@ class HomeActivity : AppCompatActivity() {
 
 
     }
+    override fun onStart() {
+        super.onStart()
+        val functionName = object{}.javaClass.enclosingMethod.name
+        Log.d("functionName",functionName)
+
+    }
+    override fun onResume() {
+        super.onResume()
+        val functionName = object{}.javaClass.enclosingMethod.name
+        Log.d("functionName",functionName)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        val functionName = object{}.javaClass.enclosingMethod.name
+        Log.d("functionName",functionName)
+    }
+
+    override fun onStop() {
+        super.onStop()
+        val functionName = object{}.javaClass.enclosingMethod.name
+        Log.d("functionName",functionName)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        val functionName = object{}.javaClass.enclosingMethod.name
+        Log.d("functionName",functionName)
+    }
+
 }
